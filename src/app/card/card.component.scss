@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.card{
+    max-width: 350px;
+    background-color: rgb(161, 161, 74);
+    border-radius: 25px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_item{
+    padding: 10px;
+}
+
+.card_plan{
+    font-size: 22px;
+}
+
+.card_price{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.card_button{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+//so vai funcionar com !important
+//efetar todas as referencias dentro do codigo
+//vai afetar a cor do botao cancelar pra amarelo nos cards verde e roxo
+// ::ng-deep .card_cancel{
+//     background-color: rgb(146, 255, 4) !important;
+// } 
+
+
+//o host vai aplicar a cor amarela somente no card verde
+// :host ::ng-deep .card_cancel{
+//     background-color: rgb(146, 255, 4) !important;
+// }
+
+
+:host ::ng-deep mat-slider 
+.mdc-slider__track--active_fill {
+      border-color: yellow !important;
+}
+    
